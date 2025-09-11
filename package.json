@@ -1,11 +1,11 @@
 {
-  "name": "mcp-server-boilerplate",
+  "name": "cursor-user-commands",
   "version": "0.1.0",
-  "description": "A boilerplate template for building Model Context Protocol (MCP) servers with TypeScript",
+  "description": "MCP server that exposes ~/.cursor/commands/*.md as prompts",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "mcp-server-boilerplate": "dist/server.js"
+    "cursor-user-commands": "dist/server.js"
   },
   "files": [
     "dist/**/*",
@@ -25,12 +25,10 @@
   "keywords": [
     "mcp",
     "model-context-protocol",
-    "typescript",
-    "boilerplate",
-    "template",
-    "ai-assistant",
-    "claude",
-    "cursor"
+    "prompts",
+    "cursor",
+    "markdown",
+    "typescript"
   ],
   "author": "",
   "license": "MIT",

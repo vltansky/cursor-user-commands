@@ -1,6 +1,6 @@
 {
     "mcpServers": {
-        "mcp-server-boilerplate": {
+        "user-commands": {
             "command": "node",
             "args": [
                 "dist/server.js"
