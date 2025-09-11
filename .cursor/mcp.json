@@ -1,6 +1,6 @@
 {
     "mcpServers": {
-        "user-commands": {
+        "cursor-user-commands": {
             "command": "node",
             "args": [
                 "dist/server.js"

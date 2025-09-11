@@ -2,7 +2,7 @@
 
 An MCP server that exposes markdown files in `~/.cursor/commands/*.md` as prompts via the MCP `server/prompts` API.
 
-[![Cursor Quick Install](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=cursor-user-commands&config=%7B%22command%22%3A%22npx%20-y%20cursor-user-commands%22%7D)
+[![Cursor Quick Install](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=cursor-user-commands&config=ewogICJjb21tYW5kIjogIm5weCIsCiAgImFyZ3MiOiBbCiAgICAiY3Vyc29yLXVzZXItY29tbWFuZHMiCiAgXQp9Cg==)
 
 ## Install
 
@@ -18,7 +18,8 @@ Add to `~/.cursor/mcp.json` (or your client’s config):
 {
   "mcpServers": {
     "cursor-user-commands": {
-      "command": "cursor-user-commands"
+      "command": "npx",
+      "args": ["cursor-user-commands"]
     }
   }
 }
@@ -51,6 +52,7 @@ cursor ~/.cursor/commands
 ```
 
 Notes:
+
 - Files must have the `.md` extension to be recognized.
 - Prompts are registered at server startup; after adding files, restart the server or reconnect the MCP client to refresh the list.
 
